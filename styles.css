@@ -1,0 +1,67 @@
+/* Base Styles */
+body {
+    font-family: "Times New Roman", serif;
+    font-size: 20px;
+    line-height: 1.5;
+    color: black;
+    margin: 0;
+    padding: 20px;
+    text-align: center; /* Center main block and titles */
+    background-color: #fff;
+}
+
+/* Theme selector dropdown styling */
+#theme-selector {
+    margin-bottom: 20px;
+    font-size: 16px;
+    padding: 5px 10px;
+}
+
+/* Content box */
+.content {
+    max-width: 600px;
+    margin: 0 auto; /* Center content */
+    padding: 20px;
+}
+
+/* Titles */
+h1, h3 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 20px 0;
+}
+
+/* Subtitle color */
+h3 {
+    color: #006EB6;
+}
+
+/* Paragraphs and list */
+p {
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.does-list {
+    text-align: left;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+/* Logo */
+.logo {
+    width: 150px;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+}
+
+/* Dark Theme */
+body.dark {
+    background-color: #333;
+    color: white;
+}
+
+body.dark h3 {
+    color: #00BFFF; /* Lighter blue for accessibility */
+}

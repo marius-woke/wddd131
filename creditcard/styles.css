@@ -1,0 +1,112 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+}
+
+.container {
+    position: relative;
+    width: 360px;
+    height: 240px;
+}
+
+.card-back {
+    width: 320px;
+    height: 200px;
+    background: linear-gradient(to right, #bbb, #ddd); /* Light gray gradient */
+    border-radius: 10px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    padding: 20px;
+    color: #333;
+}
+
+.black-strip {
+    width: 100%;
+    height: 40px;
+    background: #666; /* Softer black */
+    margin-bottom: 20px;
+    border-radius: 4px;
+}
+
+.cvv-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.cvv-box label {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.cvv-box input {
+    width: 100px;
+    padding: 5px;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    background-color: #f0f0f0;
+}
+
+.card-front {
+    width: 320px;
+    height: 200px;
+    background: #eee; /* Light gray front */
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 15px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+    z-index: 2;
+}
+
+.total {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.chip {
+    width: 40px;
+    height: 30px;
+    background: orange;
+    border-radius: 5px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+label {
+    font-size: 14px;
+    margin-top: 10px;
+    display: block;
+}
+
+input {
+    width: 90%;
+    padding: 5px;
+    margin: 5px 0;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+}
+
+.expiration {
+    display: flex;
+    gap: 10px;
+}
+
+.submit-btn {
+    margin-top: 20px;
+    padding: 8px 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

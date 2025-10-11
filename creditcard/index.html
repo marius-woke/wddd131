@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credit Card Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <!-- Back of Card -->
+        <div class="card-back">
+            <div class="black-strip"></div>
+            <div class="cvv-box">
+                <label for="cvc">CVC/CVV</label>
+                <input type="text" id="cvc" placeholder="XXX" maxlength="3">
+            </div>
+        </div>
+
+        <!-- Front of Card -->
+        <div class="card-front">
+            <p class="total">TOTAL: $199</p>
+            <div class="chip"></div>
+
+            <label for="card-number">CARD NUMBER</label>
+            <input type="text" id="card-number" placeholder="1234 5678 9101 1020" maxlength="19">
+
+            <label for="card-holder">CARD HOLDER</label>
+            <input type="text" id="card-holder" placeholder="John Doe">
+
+            <label>EXPIRATION</label>
+            <div class="expiration">
+                <input type="text" id="exp-month" placeholder="MM" maxlength="2">
+                <input type="text" id="exp-year" placeholder="YY" maxlength="2">
+            </div>
+
+            <button class="submit-btn" id="submit-button">Submit</button>
+        </div>
+    </div>
+
+    <script src="credit.js"></script>
+</body>
+</html>

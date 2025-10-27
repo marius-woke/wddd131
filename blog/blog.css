@@ -9,14 +9,14 @@ body {
   background-color: #fdfaf5;
   color: #473144;
   padding: 20px;
-  max-width: 1200px;
-  margin: 0 auto;
+  max-width: 1200px; /* Set a maximum width for the body */
+  margin: 0 auto; /* Center the body */
 }
 
 header {
   text-align: center;
   margin-bottom: 20px;
-  width: 100%;
+  width: 100%; /* Ensure header spans full width */
 }
 
 h1 {
@@ -33,7 +33,7 @@ hr {
 
 .main-nav {
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-end; /* Align nav to the right */
   gap: 10px;
   list-style: none;
 }
@@ -53,7 +53,7 @@ hr {
   grid-template-columns: 2fr 1fr;
   gap: 20px;
   max-width: 960px;
-  margin: 0 auto;
+  margin: 0 auto; /* Center the container */
 }
 
 .articles {
@@ -68,8 +68,6 @@ article {
   background-color: #FFF;
   padding: 15px;
   gap: 20px;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 article > div:first-child {
@@ -82,28 +80,26 @@ article img {
   max-width: 100%;
   height: auto;
   display: block;
-  margin: 0 auto 8px auto;
+  margin: 0 auto;
 }
 
 article h2 {
   color: #AF1B3F;
-  margin-bottom: 8px;
 }
 
 article div {
-  padding: 5px 0;
+  padding: 10px;
 }
 
 .filters {
   background-color: #FFF;
   padding: 15px;
   border: 1px solid #EFC69B;
-  border-radius: 8px;
 }
 
 footer {
   text-align: center;
   padding-top: 20px;
   color: #666;
-  width: 100%;
+  width: 100%; /* Ensure footer spans full width */
 }

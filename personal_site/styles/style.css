@@ -1,6 +1,3 @@
-/* ========================= */
-/* 🎃 SPOOKY HOLLOW WEBSITE */
-/* ========================= */
 
 @import url('https://fonts.googleapis.com/css2?family=Creepster&family=Roboto:wght@300;500&display=swap');
 
@@ -22,6 +19,65 @@ body {
   position: relative;
 }
 
+#halloween-quiz {
+  margin: 40px auto;
+  max-width: 800px;
+  background-color: rgba(255, 117, 24, 0.1);
+  border: 1px solid #ff7518;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 0 20px rgba(255, 117, 24, 0.4);
+  position: relative;
+  z-index: 3;
+}
+
+#halloween-quiz h2 {
+  font-family: 'Creepster', cursive;
+  color: #ff7518;
+  font-size: 2rem;
+  margin-bottom: 15px;
+  text-shadow: 0 0 10px #ff7518;
+}
+
+.question {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.question label {
+  font-weight: bold;
+  color: #fff7e6;
+}
+
+input[type="radio"] {
+  margin-right: 8px;
+}
+
+button[type="submit"] {
+  background-color: #ff7518;
+  color: #000;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #000;
+  color: #ff7518;
+  box-shadow: 0 0 15px #ff7518;
+}
+
+#quiz-result {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  color: #fff7e6;
+  text-shadow: 0 0 10px #ff7518;
+}
+
+
 /* Header */
 header {
   background: linear-gradient(90deg, #ff7518, #cc5500);
@@ -37,8 +93,20 @@ header h1 {
   font-size: 3rem;
   color: #fff7e6;
   text-shadow: 0 0 25px #000;
-  margin-bottom: 10px;
+  margin-bottom: 90px;
 }
+
+.header-logo {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120px; 
+  opacity: 0.3; 
+  z-index: 1; 
+  pointer-events: none; 
+}
+
 
 nav ul {
   list-style: none;
@@ -151,9 +219,7 @@ footer {
   z-index: 5;
 }
 
-/* ========================= */
-/* 🦇 BAT ANIMATION          */
-/* ========================= */
+
 #bat-container {
   position: fixed;
   top: 0;
@@ -181,9 +247,7 @@ footer {
   }
 }
 
-/* ========================= */
-/* 🌫️ FOG EFFECT            */
-/* ========================= */
+
 body::before {
   content: "";
   position: fixed;
@@ -207,9 +271,7 @@ body::before {
   }
 }
 
-/* ========================= */
-/* ✨ TEXT GLOW ON HOVER     */
-/* ========================= */
+
 h1:hover,
 h2:hover,
 p:hover {
@@ -217,9 +279,7 @@ p:hover {
   transition: text-shadow 0.3s ease-in-out;
 }
 
-/* ========================= */
-/* 👁️ RESPONSIVE DESIGN     */
-/* ========================= */
+
 @media (max-width: 768px) {
   header h1 {
     font-size: 2rem;
@@ -239,9 +299,7 @@ p:hover {
   }
 }
 
-/* ========================= */
-/* 🕯️ SPOOKY LOADING EFFECT */
-/* ========================= */
+
 @keyframes flicker {
   0%, 18%, 22%, 25%, 53%, 57%, 100% {
     opacity: 1;

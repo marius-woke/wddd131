@@ -15,11 +15,33 @@ function showSlides() {
   setTimeout(showSlides, 4000);
 }
 
+document.getElementById("quiz-form").addEventListener("submit", function (e) {
+  e.preventDefault();
+
+  let score = 0;
+  const answers = {
+    q1: "werewolf",
+    q2: "jack",
+    q3: "blue"
+  };
+
+  for (let key in answers) {
+    const selected = document.querySelector(`input[name="${key}"]:checked`);
+    if (selected && selected.value === answers[key]) {
+      score++;
+    }
+  }
+
+  const result = document.getElementById("quiz-result");
+  result.textContent = `You got ${score} out of 3 correct! 🎃`;
+});
+
+
 // =========================
 // 🦇 FLYING BATS
 // =========================
 const batContainer = document.getElementById("bat-container");
-const batImage = "images/bat.png";
+const batImage = "images/bat1.png";
 
 function createBat() {
   const bat = document.createElement("img");

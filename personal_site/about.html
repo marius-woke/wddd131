@@ -8,7 +8,8 @@
 </head>
 <body>
     <header>
-        <h1>The Legend of Spooky Hollow</h1>
+        <img src="images/logo.png" alt="Spooky Hollow Logo" class="header-logo">
+        <h1>🎃 The Legend of Spooky Hollow 🎃</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -31,10 +32,40 @@
             <p>The mist never leaves this place. Step too deep and the forest whispers your name. 
             Some say those who wander here never truly leave.</p>
         </section>
+
+        <section id="halloween-quiz">
+        <h2>Test Your Halloween Knowledge</h2>
+        <form id="quiz-form">
+            <div class="question">
+            <label>1. What creature transforms during a full moon?</label><br>
+            <input type="radio" name="q1" value="vampire"> Vampire<br>
+            <input type="radio" name="q1" value="werewolf"> Werewolf<br>
+            <input type="radio" name="q1" value="zombie"> Zombie
+            </div>
+
+            <div class="question">
+            <label>2. What’s the name of the pumpkin king in “The Nightmare Before Christmas”?</label><br>
+            <input type="radio" name="q2" value="jack"> Jack Skellington<br>
+            <input type="radio" name="q2" value="zero"> Zero<br>
+            <input type="radio" name="q2" value="oogie"> Oogie Boogie
+            </div>
+
+            <div class="question">
+            <label>3. Which color is NOT traditionally associated with Halloween?</label><br>
+            <input type="radio" name="q3" value="orange"> Orange<br>
+            <input type="radio" name="q3" value="black"> Black<br>
+            <input type="radio" name="q3" value="blue"> Blue
+            </div>
+
+            <button type="submit">Submit Answers</button>
+            <p id="quiz-result"></p>
+        </form>
+        </section>
+
     </main>
 
     <footer>
-        <p>© 2025 Spooky Hollow | Where Legends Never Die</p>
+        <p>© 2025 Spooky Hollow | Where Legends Never Die 👻</p>
     </footer>
 </body>
 </html>

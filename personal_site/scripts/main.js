@@ -1,6 +1,3 @@
-// =========================
-// 🎃 SLIDESHOW
-// =========================
 let slideIndex = 0;
 showSlides();
 
@@ -36,33 +33,5 @@ document.getElementById("quiz-form").addEventListener("submit", function (e) {
   result.textContent = `You got ${score} out of 3 correct! 🎃`;
 });
 
-
-// =========================
-// 🦇 FLYING BATS
-// =========================
-const batContainer = document.getElementById("bat-container");
-const batImage = "images/bat1.png";
-
-function createBat() {
-  const bat = document.createElement("img");
-  bat.src = batImage;
-  bat.classList.add("bat");
-  bat.style.left = Math.random() * window.innerWidth + "px";
-  bat.style.top = Math.random() * 200 + "px";
-  bat.style.animationDuration = 8 + Math.random() * 5 + "s";
-  batContainer.appendChild(bat);
-
-  // Remove bat after animation
-  setTimeout(() => {
-    bat.remove();
-  }, 13000);
-}
-
-// Create new bats periodically
-setInterval(createBat, 3000);
-
-// =========================
-// 🔊 SPOOKY BACKGROUND MUSIC
-// =========================
 const spookyAudio = document.getElementById("spooky-audio");
 spookyAudio.volume = 0.3; // soft spooky ambience
